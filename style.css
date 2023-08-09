@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Utility Class */
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+/* Utility Class ends here */
+
+.container {
+    padding: 0 15px;
+    min-height: 100vh;
+    justify-content: center;
+    background-color: #f0f2f5;
+}
+
+.fb {
+    justify-content: space-between;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.fb .text {
+    margin-bottom: 90px;
+}
+
+.fb h1 {
+    color: #1877f2;
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+.fb p {
+    font-size: 1.75rem;
+    white-space: nowrap;
+}
+
+form {
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+form input {
+    height: 55px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    padding: 0 14px;
+}
+
+form input:focus {
+    outline: none;
+    border-color: #1877f2;
+}
+
+::placeholder {
+    color: #777;
+    font-size: 1.063rem;
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+}
+
+.btn .login {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #1877f2;
+    padding: 15px 0;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 600;
+    transform: 0.2s ease;
+}
+
+.btn .login:hover {
+    background: #1877f2;
+}
+
+form a {
+    text-decoration: none;
+}
+
+.btn .forget {
+    color: #1877f2;
+    font-size: 0.8rem;
+}
+
+.btn .forget:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.btn2 {
+    margin-top: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.btn2 button {
+    padding: 15px 20px;
+    background-color: #42b72a;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: .2s ease;
+    border: none;
+}
+
+.btn2 button:hover {
+    background: #3ba626;
+}
+
+
+/* Responsiveness */
+
+@media (max-width: 900px) {
+    .fb {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .fb .text {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 460px) {
+    .fb h1 {
+        font-size: 3.5rem;
+    }
+
+    form {
+        width: 390px;
+    }
+
+    .fb p {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 390px) {
+    form {
+        width: 300px;
+    }
+}
